@@ -1,8 +1,8 @@
 # s2v-iia-shoppingcart-demo
 
-This is a working demo of a native HTML5 Shoping cart that uses drag and drop (dropable) features to select a specific colour of a Sphero. Then atfter checking out the cart, it will hook into the "s2v-iia-sphero-node"  project (also found in this account as a separate repository) and changes the colour of the Sphero depending on the colour or Colours selected.
+This is a working demo of a native HTML5 Shoping cart that uses drag and drop (dropable) features to select a specific colour of a Sphero. Then after checking out the cart, it will hook into the "s2v-iia-sphero-node"  project (also found in this account as a separate repository) and changes the colour of the Sphero depending on the selected colour(s).
 
-IN order to run it, simply:
+In order to run it, simply:
 
 1. Clone or Download the Zip file for this repository
 2. Open the file cart.js and at the very end, update the following variables:
@@ -14,9 +14,9 @@ IN order to run it, simply:
 5. That's it, enjoy seeing how your Sphero changes colours.
 
 
-NB... You can select multiple Spheros colours and checkout your cart, notice how the Sphero changes colours accordnly.
+NB... You can drop multiple Spheros colours and checkout your cart, notice how the Sphero changes colours accordingly.
 
-If you have any question or commend, do not hesitate to drop an email to barack.dorman@gmail.com
+If you have any question or comment, do not hesitate to drop an email to barack.dorman@gmail.com
 
 Thanks for watching...
 
