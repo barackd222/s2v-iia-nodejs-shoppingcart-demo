@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://vadendesign.com/projects/jquery-cart/ -->
+<!-- This shopping cart was taken and adapted from the original work of: ©2011 Derick Vaden - Scripting for Web Applications - Full Sail University - Thank you for such a great development -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>S2V - Integration in Action Workshop | Shopping Cart</title>
+	<link rel="stylesheet" href="./src/main.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="./src/jquery-ui-1.8.11.custom.css" type="text/css" media="screen">
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<header>
+				<h1><a href="https://github.com/barackd222">Download S2V Integration in Action Workshop</a></h1>
+			</header>
+
+			<section id="products">
+				<h2>Welcome to the Shopping Cart demo</h2>
+				<p>Drag products that you wish to purchase into the shopping cart area on the right.</p>
+				<br><br>
+				<div class="product ui-draggable" id="0001" title="Red Sphero">
+					<img src="./src/sr.png" width="250" height="198" alt="Red Sphero">
+					<div class="product-info">
+						<h2 class="product-title">Red Sphero</h2>
+						<p class="id">1001</p>
+						<p class="product-type">Robots-IOT</p>
+						<p class="product-description">Interesting fact about colour Red: Red is the colour associated to love, seduction, success, power and Oracle Corporation!
+						</p>
+					</div>
+					<p class="price">$21.95</p>
+				</div>
+				<div class="product ui-draggable" id="0002" title="Blue Sphero">
+					<img src="./src/sb.png" width="250" height="198" alt="jQuery T-Shirt">
+					<div class="product-info">
+						<h2 class="product-title">Blue Sphero</h2>
+						<p class="id">1002</p>
+						<p class="product-type">Robots-IOT</p>
+						<p class="product-description">Interesting fact about colour Blue: Did you know that Blue Jeans are worn all over the world?</p>
+					</div>
+					<p class="price">$26.99</p>
+				</div>
+				<div class="product ui-draggable" id="0003" title="Pink Sphero">
+					<img src="./src/sp.png" width="250" height="198" alt="jQuery T-Shirt">
+					<div class="product-info">
+						<h2 class="product-title">Pink Sphero</h2>
+						<p class="id">1003</p>
+						<p class="product-type">Robots-IOT</p>
+						<p class="product-description">Interesting fact about colour Pink: Which colors do you need to mix to get Pink? You are right, red and white!</p>
+					</div>
+					<p class="price">$29.99</p>
+				</div>
+				<div class="product ui-draggable" id="0004" title="Yellow Sphero">
+					<img src="./src/sy.png" width="250" height="198" alt="jQuery T-Shirt">
+					<div class="product-info">
+						<h2 class="product-title">Yellow Sphero</h2>
+						<p class="id">1004</p>
+						<p class="product-type">Robots-IOT</p>
+						<p class="product-description">Interesting fact about colour Yellow: Yellow is the color that captures our attention more than any other color. Is
+							that true? I thought it was red...</p>
+					</div>
+					<p class="price">$16.99</p>
+				</div>
+				<div class="product ui-draggable" id="0005" title="Green Sphero">
+					<img src="./src/sg.png" width="250" height="198" alt="jQuery T-Shirt">
+					<div class="product-info">
+						<h2 class="product-title">Green Sphero</h2>
+						<p class="id">1005</p>
+						<p class="product-type">Robots-IOT</p>
+						<p class="product-description">Interesting fact about colour Green: Green is no longer just a color. It's now the symbol of ecology, a political party
+							and for some represents a lifestyle! Whatever that means...</p>
+					</div>
+					<p class="price">$18.99</p>
+				</div>
+			</section>
+
+			<aside>
+				<div id="followbox"></div>
+				<div id="cart" style="position: static; top: auto; left: auto;">
+					<h2>Your Shopping Cart</h2>
+					<p>As you browse through the product listing, you can add your items to the shopping cart by dragging them into the box
+						below.
+					</p>
+					<div class="dropzone ui-droppable">
+						<p>Drag items here to add them to your cart.</p>
+					</div>
+					<div class="cart-content">
+						<ol>
+							<li class="placeholder">You have no items in your cart.</li>
+						</ol>
+					</div>
+					<div class="empty ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" style="display: none;">
+						<span class="ui-button-text">
+							Remove all items from cart.
+						</span>
+					</div>
+					<div class="checkoutBtn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" style="display: none;">
+						<span class="ui-button-text">
+							Checkout
+						</span>
+					</div>					
+				</div>
+			</aside>
+			<div id="dialog-confirm" title="Empty Cart">Are you sure you want to empty the contents of your shopping cart.</div>
+			<div id="dialog-checkout-confirm" title="Checkout Shopping Cart">Do you confirm to proceed with the checkout?</div>
+			<footer>
+				<p>©2016 Speed 2 Value - Integration in Action Workshop - Shopping cart demo</p>
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript" src="./src/jquery.min.js"></script>
+	<script type="text/javascript" src="./src/jquery-ui-1.8.11.custom.min.js"></script>
+	<script type="text/javascript" src="./src/jquery.jfollow.js"></script>
+	<script type="text/javascript" src="./src/script.js"></script>
+	<script type="text/javascript" src="./src/cart.js"></script>
+
+</body>
+
+</html>
