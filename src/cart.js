@@ -254,7 +254,8 @@ var emptyBtn = $('.empty').button();
 var emptyCheckoutBtn = $('.checkoutBtn').button();
 var quantity = 1;
 
-var globalIPAddress = "10.0.0.97";
+//var globalIPAddress = "10.0.0.97";
+var globalIPAddress = "192.168.1.76";
 var globalPort = "3001";
 
 
