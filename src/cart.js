@@ -142,6 +142,10 @@ $(document).ready(function () {
 												postColor(colour);
 												break;
 
+											case "ARDRONE2":
+												buyARDrone2();
+												break;
+
 											default:
 												alert("Unknown Colour. Please choose a colour as the first word in your Item name");
 										}
@@ -205,10 +209,21 @@ function postColor(color) {
 
 	// Initiating XMLHttpRequest Object:
 	var http_request = initiateXMLHttpObject();
-	
+
 	sendRequest(http_request, "POST", uri, true);
 }
 
+function buyARDrone2() {
+
+	var uri = "http://localhost:4002/ardrone2/takeoff/stay/land";// Command the AR Drone 2 to take off, stay and land!
+
+	//alert("URI is [" + uri + "]");
+
+	// Initiating XMLHttpRequest Object:
+	var http_request = initiateXMLHttpObject();
+
+	sendRequest(http_request, "POST", uri, true);
+}
 
 function sendRequest(http_request, verb, uri, async) {
 
@@ -255,7 +270,8 @@ var emptyCheckoutBtn = $('.checkoutBtn').button();
 var quantity = 1;
 
 //var globalIPAddress = "10.0.0.97";
-var globalIPAddress = "192.168.1.76";
+//var globalIPAddress = "192.168.1.76";
+var globalIPAddress = "accs.oraclecloud.com";
 var globalPort = "3001";
 
 
